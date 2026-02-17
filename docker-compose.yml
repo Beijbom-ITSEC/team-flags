@@ -27,9 +27,9 @@ services:
     container_name: team-flags-nginx
     ports:
       - "${NGINX_PORT:-80}:80"
-    depends_on:
-      app:
-        condition: service_healthy
+#    depends_on:
+ #     app:
+#        condition: service_healthy
     networks:
       - frontend-net
     restart: unless-stopped
